@@ -1,0 +1,50 @@
+department: investment_supervision
+version: 1.0.0
+updated_at: 2025-02-05T00:00:00+00:00
+
+rules:
+  - id: INV001
+    name: 投资范围审查
+    description: 检查投资范围是否符合监管要求
+    enabled: true
+    keywords:
+      - 投资范围
+      - 投资标的
+      - 投资品种
+    risk_level: high
+    recommendation: 建议明确投资范围的具体标的和比例限制
+
+  - id: INV002
+    name: 投资比例限制
+    description: 验证投资比例是否在监管限制范围内
+    enabled: true
+    keywords:
+      - 投资比例
+      - 单一股票
+      - 单一发行人
+    check_items:
+      - 单一股票投资比例
+      - 单一发行人债券比例
+    risk_level: high
+    recommendation: 确保各投资比例符合最新监管规定
+
+  - id: INV003
+    name: 投资限制条款
+    description: 检查是否存在禁止或限制的投资行为
+    enabled: true
+    keywords:
+      - 禁止投资
+      - 限制投资
+      - 关联交易
+    risk_level: high
+    recommendation: 确认投资限制条款覆盖所有监管要求
+
+  - id: INV004
+    name: 流动性资产要求
+    description: 审查流动性资产比例是否符合监管要求
+    enabled: true
+    keywords:
+      - 流动性资产
+      - 现金管理
+    risk_level: medium
+    recommendation: 确保流动性资产比例满足监管最低要求

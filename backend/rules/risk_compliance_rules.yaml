@@ -1,0 +1,59 @@
+department: risk_compliance
+version: 1.0.0
+updated_at: 2025-02-05T00:00:00+00:00
+
+rules:
+  - id: RC001
+    name: 合同文件一致性
+    description: 检查正文列示文件名与签署页是否一致
+    enabled: true
+    keywords:
+      - 文件名称
+      - 签署页
+      - 附件
+    risk_level: medium
+    recommendation: 核对正文和签署页的文件名称是否完全一致
+
+  - id: RC002
+    name: 托管人职责审查
+    description: 审查托管人职责条款完整性
+    enabled: true
+    keywords:
+      - 托管人职责
+      - 保管职责
+      - 监督职责
+    risk_level: high
+    recommendation: 确保职责条款覆盖所有必要的托管职能
+
+  - id: RC003
+    name: 反洗钱条款
+    description: 审查反洗钱相关条款
+    enabled: true
+    keywords:
+      - 反洗钱
+      - KYC
+      - 客户身份识别
+    risk_level: high
+    recommendation: 确认反洗钱条款符合监管要求
+
+  - id: RC004
+    name: 违约责任条款
+    description: 审查违约责任条款完整性
+    enabled: true
+    keywords:
+      - 违约责任
+      - 赔偿
+      - 违约金
+    risk_level: medium
+    recommendation: 确保违约责任条款明确且可执行
+
+  - id: RC005
+    name: 引用文件版本
+    description: 检查引用的监管文件是否为最新版
+    enabled: true
+    keywords:
+      - 引用文件
+      - 最新版
+      - 监管规定
+    risk_level: medium
+    recommendation: 核对引用文件的版本号

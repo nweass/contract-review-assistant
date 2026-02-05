@@ -1,0 +1,48 @@
+department: valuation_service
+version: 1.0.0
+updated_at: 2025-02-05T00:00:00+00:00
+
+rules:
+  - id: VS001
+    name: 估值核算方法
+    description: 审查估值核算方法及频率
+    enabled: true
+    keywords:
+      - 估值方法
+      - 核算方法
+      - 估值频率
+    risk_level: medium
+    recommendation: 明确估值方法和频率，确保符合监管要求
+
+  - id: VS002
+    name: 对账处理方法
+    description: 审查对账处理方法及频率
+    enabled: true
+    keywords:
+      - 对账
+      - 核对
+      - 账务核对
+    risk_level: medium
+    recommendation: 明确对账流程和频率要求
+
+  - id: VS003
+    name: 报告出具方法
+    description: 审查报告出具方法及频率
+    enabled: true
+    keywords:
+      - 报告出具
+      - 定期报告
+      - 信息披露
+    risk_level: medium
+    recommendation: 明确报告类型、频率和内容要求
+
+  - id: VS004
+    name: 费用计算方法
+    description: 审查托管费用计算方法
+    enabled: true
+    keywords:
+      - 托管费
+      - 费用计算
+      - 费率
+    risk_level: medium
+    recommendation: 确认费用计算方式清晰明确

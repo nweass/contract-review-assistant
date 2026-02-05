@@ -1,0 +1,48 @@
+department: settlement_service
+version: 1.0.0
+updated_at: 2025-02-05T00:00:00+00:00
+
+rules:
+  - id: SS001
+    name: 清算交收方式
+    description: 审查清算交收方式与频率
+    enabled: true
+    keywords:
+      - 清算
+      - 交收
+      - 交割
+    risk_level: medium
+    recommendation: 明确清算交收的具体流程和时间要求
+
+  - id: SS002
+    name: 账户管理要求
+    description: 审查账户管理相关条款
+    enabled: true
+    keywords:
+      - 账户管理
+      - 资金账户
+      - 证券账户
+    risk_level: high
+    recommendation: 确认账户开立、使用和管理的具体要求
+
+  - id: SS003
+    name: 实物资产保管
+    description: 审查实物资产保管方式
+    enabled: true
+    keywords:
+      - 实物资产
+      - 资产保管
+      - 保管方式
+    risk_level: medium
+    recommendation: 明确实物资产的保管和盘点要求
+
+  - id: SS004
+    name: 资产核对方式
+    description: 审查资产核对方式
+    enabled: true
+    keywords:
+      - 资产核对
+      - 盘点
+      - 账实核对
+    risk_level: medium
+    recommendation: 明确资产核对的频率和方法

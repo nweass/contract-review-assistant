@@ -1,0 +1,141 @@
+/* 全局样式变量 */
+$primary-color: #409EFF;
+$success-color: #67C23A;
+$warning-color: #E6A23C;
+$danger-color: #F56C6C;
+$info-color: #909399;
+
+$text-primary: #303133;
+$text-regular: #606266;
+$text-secondary: #909399;
+$text-placeholder: #C0C4CC;
+
+$border-color: #DCDFE6;
+$border-color-light: #E4E7ED;
+$border-color-lighter: #EBEEF5;
+
+$background-color: #F5F7FA;
+
+/* 全局重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  font-size: 14px;
+  color: $text-primary;
+  background-color: $background-color;
+}
+
+#app {
+  height: 100%;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $text-placeholder;
+  border-radius: 3px;
+  
+  &:hover {
+    background: $text-secondary;
+  }
+}
+
+/* 常用工具类 */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+/* Element Plus 覆盖样式 */
+.el-card {
+  border-radius: 8px;
+}
+
+.el-button--primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  
+  &:hover, &:focus {
+    background-color: lighten($primary-color, 10%);
+    border-color: lighten($primary-color, 10%);
+  }
+}
+
+.el-menu {
+  border-right: none !important;
+}
+
+/* 表格样式优化 */
+.el-table {
+  th {
+    background-color: $background-color !important;
+  }
+}
+
+/* 对话框样式 */
+.el-dialog {
+  border-radius: 8px;
+  
+  .el-dialog__header {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 15px;
+  }
+  
+  .el-dialog__footer {
+    border-top: 1px solid $border-color;
+    padding-top: 15px;
+  }
+}
+
+/* 上传组件样式 */
+.el-upload-dragger {
+  border: 2px dashed $border-color !important;
+  border-radius: 8px !important;
+  
+  &:hover {
+    border-color: $primary-color !important;
+  }
+}
+
+/* 标签页样式 */
+.el-tabs__item {
+  font-size: 14px;
+}
+
+/* 消息提示优化 */
+.el-message {
+  border-radius: 4px;
+}
